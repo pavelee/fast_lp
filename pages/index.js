@@ -1,7 +1,10 @@
 export default function Home() {
     return (
         <div>
-            <h1 className="text-3xl font-bold underline">Hello world!</h1>
+            <h1>Landing pages:</h1>
+            <ul>
+              <li><a href="/pavo">Pavo - mobile app</a></li>
+            </ul>
         </div>
     );
 }
