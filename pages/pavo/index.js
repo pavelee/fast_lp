@@ -1,24 +1,42 @@
+import { useState } from "react";
 import { AiFillAndroid, AiFillApple } from "react-icons/ai";
 
 const NavBar = (props) => {
+    const [showBurgerMenu, setShowBurgerMenu] = useState(false);
     return (
         <div className="border p-4 fixed w-full">
             <div className="container mx-auto max-w-screen-lg">
                 <div className="float-left">
                     <img className="w-32" src={"/pages/pavo/images/logo.svg"} />
                 </div>
-                <div className="float-right">
-                    <ul>
-                        <li className="inline mr-3">Home</li>
-                        <li className="inline mr-3">Features</li>
-                        <li className="inline mr-3">Details</li>
-                        <li className="inline mr-3">Pricing</li>
-                        <li className="inline mr-3">Drop</li>
-                        <li className="inline mr-3">Download</li>
-                        <li className="inline mr-3">
+                <div className="float-right md:hidden">
+                    <div
+                        className="w-10 cursor-pointer"
+                        onClick={() => {
+                            setShowBurgerMenu(!showBurgerMenu);
+                        }}
+                    >
+                        <div className="h-1 w-full bg-black rounded-lg"></div>
+                        <div className="h-1 mt-1 w-full bg-black ounded-lg"></div>
+                        <div className="h-1 mt-1 w-full bg-black ounded-lg"></div>
+                    </div>
+                </div>
+                <div className="md:float-right pt-16 md:pt-0">
+                    <ul
+                        className={
+                            (!showBurgerMenu ? "hidden" : "") + " md:block bg-white p-3 md:bg-inherit"
+                        }
+                    >
+                        <li className="md:inline md:mr-3">Home</li>
+                        <li className="md:inline md:mr-3">Features</li>
+                        <li className="md:inline md:mr-3">Details</li>
+                        <li className="md:inline md:mr-3">Pricing</li>
+                        <li className="md:inline md:mr-3">Drop</li>
+                        <li className="md:inline md:mr-3">Download</li>
+                        <li className="md:inline md:mr-3">
                             <AiFillAndroid className="inline" />
                         </li>
-                        <li className="inline mr-3">
+                        <li className="md:inline md:mr-3">
                             <AiFillApple className="inline" />
                         </li>
                     </ul>
@@ -71,7 +89,7 @@ const Pavo = () => {
             <div className="h-16">
                 <NavBar />
             </div>
-            <div className="container max-w-screen-lg mx-auto">
+            <div className="container max-w-screen-lg mx-auto p-4">
                 <div className="mt-5">
                     <MainBlock />
                 </div>
