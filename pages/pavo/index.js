@@ -11,7 +11,7 @@ const NavBar = (props) => {
                 </div>
                 <div className="float-right md:hidden">
                     <div
-                        className="w-10 cursor-pointer"
+                        className="w-10 cursor-pointer opacity-70"
                         onClick={() => {
                             setShowBurgerMenu(!showBurgerMenu);
                         }}
@@ -21,17 +21,16 @@ const NavBar = (props) => {
                         <div className="h-1 mt-1 w-full bg-black ounded-lg"></div>
                     </div>
                 </div>
-                <div className="md:float-right pt-16 md:pt-0">
+                <div className="md:float-right pt-8 md:pt-0">
                     <ul
                         className={
-                            (!showBurgerMenu ? "hidden" : "") + " md:block bg-white p-3 md:bg-inherit"
+                            (!showBurgerMenu ? "hidden" : "") + " md:block bg-white p-3 md:bg-inherit rounded-lg w-64 float-right md:w-auto"
                         }
                     >
                         <li className="md:inline md:mr-3">Home</li>
                         <li className="md:inline md:mr-3">Features</li>
                         <li className="md:inline md:mr-3">Details</li>
                         <li className="md:inline md:mr-3">Pricing</li>
-                        <li className="md:inline md:mr-3">Drop</li>
                         <li className="md:inline md:mr-3">Download</li>
                         <li className="md:inline md:mr-3">
                             <AiFillAndroid className="inline" />
