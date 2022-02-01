@@ -53,14 +53,14 @@ const Block1 = (props) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
                 <div className="text-center mb-16 md:mb-0 md:text-left md:mt-40 sm:mt-0">
-                    <h1 className="text-center font-bold text-5xl mb-8">
+                    <h1 className="font-bold text-5xl mb-8">
                         Team management mobile application
                     </h1>
-                    <p className="text-center mt-3 text-gray-700 mb-8">
+                    <p className="mt-3 text-gray-700 mb-8">
                         Start getting things done together with your team based
                         on Pavo's revolutionary team management features
                     </p>
-                    <div className="mt-3 text-center">
+                    <div className="mt-3">
                         <button className="bg-red-700 p-3 mr-5 text-white rounded-xl">
                             <AiFillAndroid className="inline" /> Download
                         </button>

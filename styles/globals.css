@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    @apply tracking-wider
+}
+
 .lp-block {
     @apply mt-16 mb-16 md:mt-40 md:mb-40;
 }
