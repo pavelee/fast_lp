@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.lp-block {
+    @apply mt-16 mb-16 md:mt-40 md:mb-40;
+}
+
+.lp-block2-card {
+    @apply rounded-xl text-center p-10 bg-[#f1f9fc];
+}
+
+.lp-block2-subtitle {
+    @apply text-[#6b747b];
+}
+
+.lp-block2-cover {
+    @apply bg-center bg-no-repeat bg-auto h-[70px] mb-5;
+}
+
+.lp-block2-title {
+    @apply font-bold text-xl mb-3;
+}
