@@ -4,9 +4,7 @@ import { AiFillAndroid, AiFillApple } from "react-icons/ai";
 const NavBar = (props) => {
     const [showBurgerMenu, setShowBurgerMenu] = useState(false);
     return (
-        <div
-            className="p-4 fixed w-full bg-white"
-        >
+        <div className="p-4 fixed w-full bg-white">
             <div className="container mx-auto max-w-screen-lg">
                 <div className="float-left pt-1">
                     <img className="w-32" src={"/pages/pavo/images/logo.svg"} />
@@ -70,7 +68,7 @@ const Block1 = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="bg-[url('/pages/pavo/images/header-smartphone.png')] bg-center bg-no-repeat bg-auto h-[600px]"></div>
+            <div className="bg-[url('/pages/pavo/images/header-smartphone.png')] bg-div h-[600px]"></div>
         </div>
     );
 };
@@ -143,14 +141,41 @@ const Block3 = (props) => {
     );
 };
 
+const Block4 = (props) => {
+    return (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+            <div className="lp-block4-content">
+                <div className="lp-block4-title">Results driven ground breaking technology</div>
+                <div className="lp-block4-text">
+                    <p>
+                        Based on our team's extensive experience in developing
+                        line of business applications and constructive customer
+                        feedback we reached a new level of revenue.
+                    </p>
+                    <p>
+                        We enjoy helping small and medium sized tech businesses
+                        take a shot at established Fortune 500 companies
+                    </p>
+                </div>
+            </div>
+            <div className="bg-[url('/pages/pavo/images/details-1.jpg')] bg-div h-[400px]">
+
+            </div>
+            {/* <div>
+                <img src={'/pages/pavo/images/details-1.jpg'} />
+            </div> */}
+        </div>
+    );
+};
+
 const Pavo = () => {
     return (
         <div
-        // className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-no-repeat bg-auto"
-        style={{
-            background:
-                "linear-gradient(rgba(197, 234, 249, 1), rgba(255, 255, 255, 1))"
-        }}
+            // className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-no-repeat bg-auto"
+            style={{
+                background:
+                    "linear-gradient(rgba(197, 234, 249, 1), rgba(255, 255, 255, 1))",
+            }}
         >
             <div className="h-16">
                 <NavBar />
@@ -166,7 +191,7 @@ const Pavo = () => {
                     <Block3 />
                 </div>
                 <div className="lp-block">
-                    <Block1 />
+                    <Block4 />
                 </div>
             </div>
         </div>

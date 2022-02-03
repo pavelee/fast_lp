@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 body {
-    @apply tracking-wider
+    @apply tracking-wider;
+}
+
+.bg-div {
+    @apply bg-center bg-no-repeat bg-contain;
 }
 
 .lp-block {
@@ -24,4 +28,16 @@ body {
 
 .lp-block2-title {
     @apply font-bold text-xl mb-3;
+}
+
+.lp-block4-content {
+    @apply pt-16;
+}
+
+.lp-block4-title {
+    @apply font-bold text-3xl mb-5;
+}
+
+.lp-block4-text p {
+    @apply text-[#6b747b] mb-5;
 }
