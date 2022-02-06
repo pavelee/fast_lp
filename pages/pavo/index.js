@@ -188,8 +188,12 @@ const Block5 = (props) => {
                         </ul>
                     </p>
                     <p>
-                        <button className="border p-3 pr-5 pl-5 rounded-xl mr-3 bg-[#594cda] text-white">Lightbox</button>
-                        <button className="border border-dark-900 p-3 pr-5 pl-5 rounded-xl bg-white">Details</button>
+                        <button className="border p-3 pr-5 pl-5 rounded-xl mr-3 bg-[#594cda] text-white">
+                            Lightbox
+                        </button>
+                        <button className="border border-dark-900 p-3 pr-5 pl-5 rounded-xl bg-white">
+                            Details
+                        </button>
                     </p>
                 </div>
             </div>
@@ -221,6 +225,52 @@ const Block6 = (props) => {
     );
 };
 
+const Block7 = (props) => {
+    const stats = [
+        {
+            c: 231,
+            d: "Happy Users",
+        },
+        {
+            c: 385,
+            d: "Issues Solved",
+        },
+        {
+            c: 195,
+            d: "Good Reviews",
+        },
+        {
+            c: 127,
+            d: "Case Studies",
+        },
+        {
+            c: 211,
+            d: "Orders Received",
+        },
+    ];
+
+    return (
+        <div className="grid grid-cols-5 gap-20">
+            {stats.map((stat) => (
+                <div>
+                    <div className="text-center font-bold text-6xl mb-3">
+                        {stat.c}
+                    </div>
+                    <div className="text-center text-[#6b747b]">
+                        {stat.d}
+                    </div>
+                </div>
+            ))}
+        </div>
+    );
+};
+
+const Block8 = (props) => {
+    return (
+        <div>asds</div>
+    )
+}
+
 const Pavo = () => {
     return (
         <div
@@ -251,6 +301,9 @@ const Pavo = () => {
                 </div>
                 <div className="lp-block">
                     <Block6 />
+                </div>
+                <div className="lp-block">
+                    <Block7 />
                 </div>
             </div>
         </div>
