@@ -161,9 +161,6 @@ const Block4 = (props) => {
             <div className="bg-[url('/pages/pavo/images/details-1.jpg')] bg-div h-[400px]">
 
             </div>
-            {/* <div>
-                <img src={'/pages/pavo/images/details-1.jpg'} />
-            </div> */}
         </div>
     );
 };
@@ -189,6 +186,9 @@ const Pavo = () => {
                 </div>
                 <div className="lp-block">
                     <Block3 />
+                </div>
+                <div className="lp-block">
+                    <Block4 />
                 </div>
                 <div className="lp-block">
                     <Block4 />
