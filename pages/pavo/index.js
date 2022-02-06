@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { AiFillAndroid, AiFillApple } from "react-icons/ai";
 
+/**
+ * file:///Users/pciosek/projects/cool_html_css_templates/pavo/web/index.html
+ */
+
 const NavBar = (props) => {
     const [showBurgerMenu, setShowBurgerMenu] = useState(false);
     return (
@@ -250,15 +254,13 @@ const Block7 = (props) => {
     ];
 
     return (
-        <div className="grid grid-cols-5 gap-20">
+        <div className="md:grid md:grid-cols-5 md:gap-20">
             {stats.map((stat) => (
-                <div>
+                <div className="mb-10 md:mb-0">
                     <div className="text-center font-bold text-6xl mb-3">
                         {stat.c}
                     </div>
-                    <div className="text-center text-[#6b747b]">
-                        {stat.d}
-                    </div>
+                    <div className="text-center text-[#6b747b]">{stat.d}</div>
                 </div>
             ))}
         </div>
@@ -266,24 +268,167 @@ const Block7 = (props) => {
 };
 
 const Block8 = (props) => {
+    const testimonials = [
+        {
+            i: "pages/pavo/images/testimonial-1.jpg",
+            t: `"It's been so fun to work with Pavo, I've managed to integrate it properly into my business flow and it's great"`,
+            a: "Jude Thorn - Designer",
+        },
+        {
+            i: "pages/pavo/images/testimonial-2.jpg",
+            t: `"We were so focused on launching as many campaigns as
+        possible that we've forgotten to target our loyal
+        customers"`,
+            a: "Roy Smith - Developer",
+        },
+        {
+            i: "pages/pavo/images/testimonial-3.jpg",
+            t: `"I've been searching for a tool like Pavo for so long. I love the reports it generates and the amazing high accuracy"`,
+            a: "Marsha Singer - Marketer",
+        },
+        {
+            i: "pages/pavo/images/testimonial-4.jpg",
+            t: `"It's been so fun to work with Pavo, I've managed to integrate it properly into my business flow and it's great"`,
+            a: "Tim Shaw - Designer",
+        },
+        {
+            i: "pages/pavo/images/testimonial-5.jpg",
+            t: `"Searching for a great prototyping and layout design app was difficult but thankfully I found app suite quickly"`,
+            a: "Lindsay Spice - Marketer",
+        },
+        {
+            i: "pages/pavo/images/testimonial-6.jpg",
+            t: `"The app support team is amazing. They've helped me with some issues and I am so grateful to the entire team"`,
+            a: "Ann Blake - Developer",
+        },
+    ];
+
     return (
-        <div>asds</div>
-    )
-}
+        <div className="">
+            <div className="text-center font-bold text-4xl mb-16">
+                What do users think about Pavo
+            </div>
+            <div className="grid grid-cols-3 gap-8 gap-y-8">
+                {testimonials.map((t) => (
+                    <div>
+                        <div className="mb-3">
+                            <img
+                                className="rounded-full h-[100px] m-auto"
+                                src={t.i}
+                            />
+                        </div>
+                        <div className="text-center text-[#6b747b] mb-3">
+                            <p className="italic">{t.t}</p>
+                        </div>
+                        <div className="text-center font-bold">
+                            <p>{t.a}</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+};
+
+const Block9 = (props) => {
+    const pricings = [
+        {
+            m: "Standard",
+            p: 29,
+            d: "This basic package covers the marketing needs of smallstartups",
+            l: (
+                <ul>
+                    <li>List building and relations</li>
+                    <li>Seamless platform integration</li>
+                    <li>Great performance on devices</li>
+                    <li>Community support and videos</li>
+                </ul>
+            ),
+        },
+        {
+            m: "Advanced",
+            p: 39,
+            d: "This is a more advanced package suited for medium companies",
+            l: (
+                <ul>
+                    <li>List building and relations</li>
+                    <li>Seamless platform integration</li>
+                    <li>Great performance on devices</li>
+                    <li>Community support and videos</li>
+                </ul>
+            ),
+        },
+        {
+            m: "Complete",
+            p: 49,
+            d: "This is a comprehensive package designed for big organizations",
+            l: (
+                <ul>
+                    <li>List building and relations</li>
+                    <li>Seamless platform integration</li>
+                    <li>Great performance on devices</li>
+                    <li>Community support and videos</li>
+                </ul>
+            ),
+        },
+    ];
+
+    return (
+        <div>
+            <div className="text-white text-center mb-16">
+                <div className="font-bold text-4xl mb-5">
+                    Pricing options for all budgets
+                </div>
+                <div>
+                    Our pricing plans are setup in such a way that any user can
+                    start enjoying Pavo without worrying so much about costs.
+                    They are flexible and work for any type of industry
+                </div>
+            </div>
+            <div className="grid grid-cols-3 gap-8">
+                {pricings.map((pricing) => (
+                    <div className="bg-white border rounded-xl p-8 text-center">
+                        <div className="text-[#eb427e] mb-8 text-3xl uppercase font-bold">
+                            {pricing.m}
+                        </div>
+                        <div className="mb-8">
+                            <div>
+                                <span className="text-4xl">$</span>
+                                <span className="text-8xl">{pricing.p}</span>
+                            </div>
+                            <div className="text-[#6b747b]">monthly</div>
+                        </div>
+                        <div className="text-[#6b747b] mb-8">
+                            {pricing.d}
+                        </div>
+                        <div className="text-left text-[#6b747b] mb-8">
+                            {pricing.l}
+                        </div>
+                        <div>
+                            <button className="border p-3 pr-5 pl-5 rounded-xl mr-3 bg-[#594cda] text-white">
+                                Download
+                            </button>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+};
 
 const Pavo = () => {
     return (
         <div
             // className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-no-repeat bg-auto"
-            style={{
-                background:
-                    "linear-gradient(rgba(197, 234, 249, 1), rgba(255, 255, 255, 1))",
-            }}
+            // style={{
+            //     background:
+            //         "linear-gradient(rgba(197, 234, 249, 1), rgba(255, 255, 255, 1))",
+            // }}
         >
             <div className="h-16">
                 <NavBar />
             </div>
-            <div className="container max-w-screen-lg mx-auto p-4">
+            <div className="container max-w-screen-lg mx-auto pr-4 pl-4">
                 <div className="lp-block">
                     <Block1 />
                 </div>
@@ -306,6 +451,17 @@ const Pavo = () => {
                     <Block7 />
                 </div>
             </div>
+            <div className="bg-[#f1f9fc] pt-16 pb-16">
+                <div className="container max-w-screen-lg mx-auto pr-4 pl-4">
+                    <Block8 />
+                </div>
+            </div>
+            <div className="pricing-background pt-16 pb-16">
+                <div className="container max-w-screen-lg mx-auto pr-4 pl-4">
+                    <Block9 />
+                </div>
+            </div>
+            <div className="lp-block"></div>
         </div>
     );
 };
