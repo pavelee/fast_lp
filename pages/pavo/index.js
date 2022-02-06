@@ -145,7 +145,9 @@ const Block4 = (props) => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
             <div className="lp-block4-content">
-                <div className="lp-block4-title">Results driven ground breaking technology</div>
+                <div className="lp-block4-title">
+                    Results driven ground breaking technology
+                </div>
                 <div className="lp-block4-text">
                     <p>
                         Based on our team's extensive experience in developing
@@ -158,9 +160,63 @@ const Block4 = (props) => {
                     </p>
                 </div>
             </div>
-            <div className="bg-[url('/pages/pavo/images/details-1.jpg')] bg-div h-[400px]">
+            <div className="bg-[url('/pages/pavo/images/details-1.jpg')] bg-div h-[400px]"></div>
+        </div>
+    );
+};
 
+const Block5 = (props) => {
+    return (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+            <div className="bg-[url('/pages/pavo/images/details-2.jpg')] bg-div h-[400px]"></div>
+            <div className="lp-block4-content">
+                <div className="lp-block4-title">
+                    Instant results for the marketing department
+                </div>
+                <div className="lp-block4-text">
+                    <p>
+                        <ul>
+                            <li>
+                                Features that will help you and your marketers
+                            </li>
+                            <li>
+                                Smooth learning curve due to the knowledge base
+                            </li>
+                            <li>
+                                Ready out-of-the-box with minor setup settings
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        <button className="border p-3 pr-5 pl-5 rounded-xl mr-3 bg-[#594cda] text-white">Lightbox</button>
+                        <button className="border border-dark-900 p-3 pr-5 pl-5 rounded-xl bg-white">Details</button>
+                    </p>
+                </div>
             </div>
+        </div>
+    );
+};
+
+const Block6 = (props) => {
+    return (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+            <div className="lp-block4-content">
+                <div className="lp-block4-title">
+                    Platform integration and life time free updates
+                </div>
+                <div className="lp-block4-text">
+                    <p>
+                        Get a glimpse of what this app can do for your marketing
+                        automation and understand why current users are so
+                        excited when using Pavo together with their teams.
+                    </p>
+                    <p>
+                        We will promptly answer any questions and honor your
+                        requests based on the service level agreement
+                    </p>
+                </div>
+            </div>
+            <div className="bg-[url('/pages/pavo/images/details-3.jpg')] bg-div h-[400px]"></div>
         </div>
     );
 };
@@ -191,7 +247,10 @@ const Pavo = () => {
                     <Block4 />
                 </div>
                 <div className="lp-block">
-                    <Block4 />
+                    <Block5 />
+                </div>
+                <div className="lp-block">
+                    <Block6 />
                 </div>
             </div>
         </div>
