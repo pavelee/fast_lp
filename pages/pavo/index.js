@@ -398,9 +398,7 @@ const Block9 = (props) => {
                             </div>
                             <div className="text-[#6b747b]">monthly</div>
                         </div>
-                        <div className="text-[#6b747b] mb-8">
-                            {pricing.d}
-                        </div>
+                        <div className="text-[#6b747b] mb-8">{pricing.d}</div>
                         <div className="text-left text-[#6b747b] mb-8">
                             {pricing.l}
                         </div>
@@ -416,14 +414,49 @@ const Block9 = (props) => {
     );
 };
 
+const Block10 = (props) => {
+    return (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+            <div className="bg-[url('/pages/pavo/images/conclusion-smartphone.png')] bg-div h-[600px]"></div>
+            <div className="lp-block4-content">
+                <div className="lp-block4-title pt-32">
+                    Team management mobile applications don’t get much better
+                    than Pavo. Download it today
+                </div>
+                <div className="lp-block4-text">
+                    <p>
+                        <button className="bg-red-700 p-3 mr-5 text-white rounded-xl">
+                            <AiFillAndroid className="inline" /> Download
+                        </button>
+                        <button className="bg-blue-700 p-3 text-white rounded-xl">
+                            <AiFillApple className="inline" /> Download
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+const Block11 = (props) => {
+    return (
+        <div>
+            <div className="text-center font-bold text-xl">
+                Pavo is a mobile application for marketing automation and you
+                can reach the team at <a href={'mailto:email@domain.com'} className={'text-blue-700'}>email@domain.com</a>
+            </div>
+        </div>
+    );
+};
+
 const Pavo = () => {
     return (
         <div
-            // className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-no-repeat bg-auto"
-            // style={{
-            //     background:
-            //         "linear-gradient(rgba(197, 234, 249, 1), rgba(255, 255, 255, 1))",
-            // }}
+        // className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-no-repeat bg-auto"
+        // style={{
+        //     background:
+        //         "linear-gradient(rgba(197, 234, 249, 1), rgba(255, 255, 255, 1))",
+        // }}
         >
             <div className="h-16">
                 <NavBar />
@@ -461,7 +494,16 @@ const Pavo = () => {
                     <Block9 />
                 </div>
             </div>
-            <div className="lp-block"></div>
+            <div className="pt-48 pb-16">
+                <div className="container max-w-screen-lg mx-auto pr-4 pl-4">
+                    <Block10 />
+                </div>
+            </div>
+            <div className="pt-16 pb-16">
+                <div className="container max-w-screen-lg mx-auto pr-4 pl-4">
+                    <Block11 />
+                </div>
+            </div>
         </div>
     );
 };
