@@ -4,6 +4,8 @@
 
 Project purpose is to boost up start of any product, service or app. Just choose template, configure and deploy!
 
+![asds](https://github.com/pavelee/lp_templates/blob/main/public/pages/start/start_page.png?raw=true)
+
 ## Start locally project using docker
 
 Just simply in project directory run:
