@@ -1,5 +1,12 @@
 import { useState } from "react";
 import { AiFillAndroid, AiFillApple } from "react-icons/ai";
+import {
+    FaFacebookF,
+    FaTwitter,
+    FaPinterestP,
+    FaInstagram,
+    FaYoutube,
+} from "react-icons/fa";
 
 /**
  * file:///Users/pciosek/projects/cool_html_css_templates/pavo/web/index.html
@@ -439,11 +446,55 @@ const Block10 = (props) => {
 };
 
 const Block11 = (props) => {
+    const socials = [
+        {
+            i: <FaFacebookF />,
+        },
+        {
+            i: <FaTwitter />,
+        },
+        {
+            i: <FaPinterestP />,
+        },
+        {
+            i: <FaInstagram />,
+        },
+        {
+            i: <FaYoutube />,
+        },
+    ];
     return (
         <div>
             <div className="text-center font-bold text-xl">
                 Pavo is a mobile application for marketing automation and you
-                can reach the team at <a href={'mailto:email@domain.com'} className={'text-blue-700'}>email@domain.com</a>
+                can reach the team at{" "}
+                <a href={"mailto:email@domain.com"} className={"text-blue-700"}>
+                    email@domain.com
+                </a>
+            </div>
+            <div className="mt-5 flex justify-center gab-4">
+                {socials.map((social) => {
+                    return (
+                        <div className="p-5 mr-5 border rounded-xl text-xl">
+                            {social.i}
+                        </div>
+                    );
+                })}
+            </div>
+        </div>
+    );
+};
+
+const Block12 = (props) => {
+    return (
+        <div className="text-[#6b747b]">
+            <div className="flex justify-center">
+                <div className="mr-5">Article Details</div>
+                <div className="mr-5">Terms and Conditions</div>
+                <div className="mr-5">Privacy Policy</div>
+            </div>
+            <div className="flex justify-center mt-5">
+                <div>Copyright © Your name</div>
             </div>
         </div>
     );
@@ -502,6 +553,11 @@ const Pavo = () => {
             <div className="pt-16 pb-16">
                 <div className="container max-w-screen-lg mx-auto pr-4 pl-4">
                     <Block11 />
+                </div>
+            </div>
+            <div className="pt-16 pb-8">
+                <div className="container max-w-screen-lg mx-auto pr-4 pl-4">
+                    <Block12 />
                 </div>
             </div>
         </div>
