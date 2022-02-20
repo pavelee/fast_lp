@@ -79,7 +79,7 @@ const Block1 = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="bg-[url('/pages/pavo/images/header-smartphone.png')] bg-div h-[600px]"></div>
+            <div className="bg-[url('/pages/pavo/images/header-smartphone.png')] bg-div h-[400px] md-h-[600px]"></div>
         </div>
     );
 };
@@ -392,7 +392,7 @@ const Block9 = (props) => {
                     They are flexible and work for any type of industry
                 </div>
             </div>
-            <div className="grid grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-8">
                 {pricings.map((pricing) => (
                     <div className="bg-white border rounded-xl p-8 text-center">
                         <div className="text-[#eb427e] mb-8 text-3xl uppercase font-bold">
@@ -426,7 +426,7 @@ const Block10 = (props) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
             <div className="bg-[url('/pages/pavo/images/conclusion-smartphone.png')] bg-div h-[600px]"></div>
             <div className="lp-block4-content">
-                <div className="lp-block4-title pt-32">
+                <div className="lp-block4-title md:pt-32">
                     Team management mobile applications don’t get much better
                     than Pavo. Download it today
                 </div>
@@ -545,7 +545,7 @@ const Pavo = () => {
                     <Block9 />
                 </div>
             </div>
-            <div className="pt-48 pb-16">
+            <div className="pt-16 pb-16">
                 <div className="container max-w-screen-lg mx-auto pr-4 pl-4">
                     <Block10 />
                 </div>
