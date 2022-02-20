@@ -156,7 +156,7 @@ const Block4 = (props) => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
             <div className="lp-block4-content">
-                <div className="lp-block4-title">
+                <div className="lp-block4-title md:pt-20">
                     Results driven ground breaking technology
                 </div>
                 <div className="lp-block4-text">
@@ -179,9 +179,8 @@ const Block4 = (props) => {
 const Block5 = (props) => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
-            <div className="bg-[url('/pages/pavo/images/details-2.jpg')] bg-div h-[400px]"></div>
             <div className="lp-block4-content">
-                <div className="lp-block4-title">
+                <div className="lp-block4-title md:pt-20">
                     Instant results for the marketing department
                 </div>
                 <div className="lp-block4-text">
@@ -208,6 +207,7 @@ const Block5 = (props) => {
                     </p>
                 </div>
             </div>
+            <div className="bg-[url('/pages/pavo/images/details-2.jpg')] bg-div h-[400px]"></div>
         </div>
     );
 };
@@ -216,7 +216,7 @@ const Block6 = (props) => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
             <div className="lp-block4-content">
-                <div className="lp-block4-title">
+                <div className="lp-block4-title md:pt-20">
                     Platform integration and life time free updates
                 </div>
                 <div className="lp-block4-text">
