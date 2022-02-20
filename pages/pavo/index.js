@@ -79,7 +79,7 @@ const Block1 = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="bg-[url('/pages/pavo/images/header-smartphone.png')] bg-div h-[400px] md-h-[600px]"></div>
+            <div className="bg-[url('/pages/pavo/images/header-smartphone.png')] bg-div h-[400px] md:h-[600px]"></div>
         </div>
     );
 };
@@ -406,7 +406,7 @@ const Block9 = (props) => {
                             <div className="text-[#6b747b]">monthly</div>
                         </div>
                         <div className="text-[#6b747b] mb-8">{pricing.d}</div>
-                        <div className="text-left text-[#6b747b] mb-8">
+                        <div className="text-center md:text-left text-[#6b747b] mb-8">
                             {pricing.l}
                         </div>
                         <div>
@@ -430,7 +430,7 @@ const Block10 = (props) => {
                     Team management mobile applications don’t get much better
                     than Pavo. Download it today
                 </div>
-                <div className="lp-block4-text">
+                <div className="lp-block4-text text-center md:text-left">
                     <p>
                         <button className="bg-red-700 p-3 mr-5 text-white rounded-xl">
                             <AiFillAndroid className="inline" /> Download

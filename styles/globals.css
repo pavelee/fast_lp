@@ -31,7 +31,7 @@ body {
 }
 
 .lp-block4-content {
-    @apply pt-16;
+    /* @apply pt-16; */
 }
 
 .lp-block4-title {
